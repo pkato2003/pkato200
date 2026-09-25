@@ -21,6 +21,21 @@ html{scroll-behavior:smooth}
 body{
   margin:0;background:var(--paper);color:var(--ink);
   font-family:var(--body);font-size:17px;line-height:1.65;
+  /* ===== MOBILE HERO FIX ===== */
+@media(max-width:820px){
+  .hero-split{
+    gap:28px;
+  }
+  .hero-media{
+    aspect-ratio:1/1;
+  }
+  .hero-media img{
+    object-position:center top;
+  }
+  .actions{
+    margin-bottom:12px;
+  }
+}
   -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%;display:block}
